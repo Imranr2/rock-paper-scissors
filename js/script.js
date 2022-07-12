@@ -20,3 +20,11 @@ function playRound(playerSelection, computerSelection) {
         return "It's a draw!"
     }
 }
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Choose rock, paper or scissors").toUpperCase()
+        let computerSelection = computerPlay()
+        console.log(playRound(playerSelection, computerSelection))
+    }
+}
